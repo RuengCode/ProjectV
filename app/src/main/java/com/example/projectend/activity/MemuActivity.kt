@@ -3,6 +3,7 @@ package com.example.projectend.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.projectend.Fragment.CountyFragment
 import com.example.projectend.Fragment.CovidTodayFragment
 import com.example.projectend.Fragment.MainFragment
 import com.example.projectend.R
@@ -13,6 +14,7 @@ class MemuActivity : AppCompatActivity() {
 
     private val mainFragment = MainFragment()
     private val covidTodayFragment = CovidTodayFragment()
+    private val countyFragment = CountyFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_memu)
@@ -24,6 +26,7 @@ class MemuActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.page_1 -> replaceFragment(mainFragment)
                 R.id.page_2 -> replaceFragment(covidTodayFragment)
+                R.id.page_3 -> replaceFragment(countyFragment)
             }
             true
         }
