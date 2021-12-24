@@ -12,12 +12,18 @@
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/drawable/bg_main_linear.xml" value="0.403125" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/drawable/btn_color_1.xml" value="0.403125" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/drawable/obj_br.xml" value="0.403125" />
+        <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/drawable/today_recover.xml" value="0.2546052631578947" />
+        <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/drawable/today_recover_fix.xml" value="0.2546052631578947" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/activity_contact.xml" value="0.33" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/activity_homeisolation.xml" value="0.2" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/activity_login.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/activity_memu.xml" value="0.2444078947368421" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/activity_test.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/fragment_covid_today.xml" value="0.2430921052631579" />
+        <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/fragment_main.xml" value="0.2444078947368421" />
+        <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/item_covid_today.xml" value="0.2444078947368421" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/item_row_covid.xml" value="0.25101351351351353" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25101351351351353" />
       </map>
