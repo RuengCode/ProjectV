@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/LiNear0"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/bg_main_linear"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="173dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/covid" />
+
+        <TextView
+            android:id="@+id/AppName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/itim"
+            android:text="KSU Fighting Covid-19"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LiNear1"
+        android:layout_width="wrap_content"
+        android:layout_height="531dp"
+        android:layout_below="@+id/LiNear0"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-67dp"
+        android:layout_marginEnd="28dp"
+
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/bg_linear"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/TextViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/itim"
+            android:text="สมัครสมาชิก"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/RegisterName"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/TextViewLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_login"
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกชื่อและนามสกุล"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/RegisterEmail"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/TextViewLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_login"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกอีเมล/e-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/RegisterPassword"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/TextViewLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_btn_login"
+            android:drawableLeft="@drawable/unlock"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกรหัสผ่าน/password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/RegisterAddress"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/TextViewLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_login"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกที่อยู่/address"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/RegisterPhone"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/TextViewLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_login"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/itim"
+            android:hint="กรอกเบอร์โทรศัพท์/Phone"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_btn_login1"
+            android:fontFamily="@font/itim"
+            android:text="สมัครสมาชิก/Register"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:layerType="software"
+            android:src="@drawable/obj_br" />
+
+        <TextView
+            android:id="@+id/NewRegisterText"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/itim"
+            android:text="คุณมีบัญชีเเล้วใช่หรือไม่ ?"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/NewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/itim"
+            android:onClick="loginAccount"
+            android:text="เข้าสู่ระบบ/Login"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

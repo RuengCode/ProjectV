@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+    </RelativeLayout>
+    <!--ดึง api covid ของ ผู้ป่วยรายวัน !-->
+    <!--data list : date , new_case , dead_case ,recover_case,total , time update !-->
+</RelativeLayout>
