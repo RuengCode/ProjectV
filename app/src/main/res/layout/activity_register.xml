@@ -140,12 +140,12 @@
             android:drawablePadding="15dp"
             android:fontFamily="@font/itim"
             android:hint="กรอกเบอร์โทรศัพท์/Phone"
-            android:inputType="textEmailAddress"
+            android:inputType="phone"
             android:padding="10dp" />
 
 
         <Button
-            android:id="@+id/Register"
+            android:id="@+id/singUpBtn"
             android:layout_width="310dp"
             android:layout_height="55dp"
             android:layout_marginLeft="20dp"
@@ -179,7 +179,6 @@
             android:layout_height="48dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/itim"
-            android:onClick="loginAccount"
             android:text="เข้าสู่ระบบ/Login"
             android:textAlignment="center"
             android:textColor="@color/green"

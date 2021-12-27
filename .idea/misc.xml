@@ -27,9 +27,14 @@
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/layout/item_row_covid.xml" value="0.25101351351351353" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25101351351351353" />
         <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/drawable/bg_adapter.xml" value="0.2546052631578947" />
+        <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/drawable/bg_color.xml" value="0.14835526315789474" />
+        <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/layout/activity_login.xml" value="0.2444078947368421" />
+        <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/layout/activity_profile.xml" value="0.21" />
+        <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/layout/activity_register.xml" value="0.2444078947368421" />
         <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/layout/fragment_county.xml" value="0.25" />
         <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/layout/fragment_covid_today.xml" value="0.2444078947368421" />
         <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/layout/item_covid_county.xml" value="0.2444078947368421" />
+        <entry key="..\:/Users/Glez/Documents/ProjectV/app/src/main/res/layout/item_covid_today.xml" value="0.2444078947368421" />
       </map>
     </option>
   </component>

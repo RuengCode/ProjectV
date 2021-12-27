@@ -10,14 +10,18 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.projectend.R
+import com.example.projectend.databinding.ActivityLoginBinding
+import com.google.firebase.auth.FirebaseAuth
+
 
 class LoginActivity : AppCompatActivity() {
 
-    //ViewBibding
-    private lateinit var binding:ActivtyloginBinding
+    //ViewBinding
+
+    private lateinit var binding: ActivityLoginBinding
 
     //ActionBar
-    private lateinit var actionBar:ActionBar
+
 
     //ProgressDialog
     private lateinit var progressDialog: ProgressDialog
@@ -29,12 +33,11 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivtyloginBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_login)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         //configure actionbar
-        actionBar= supportActionBar!!
-        actionBar.title="Login"
+
 
         //configure progress dialog
         progressDialog = ProgressDialog(this)
@@ -47,29 +50,29 @@ class LoginActivity : AppCompatActivity() {
         checkUser();
 
         //handle click, open SignUpActivity
-        binding.noAccounTv.setOnClicklistener{
-            startActivity(Intent(this,SignUpActivity::class.java))
+        binding.NewRegister.setOnClickListener{
+            startActivity(Intent(this,RegisterActivity::class.java))
         }
 
         //handle click, begin login
-        binding.loginBtn.setOnClicklistener{
+        binding.Login.setOnClickListener{
             //before logging in, validate data
             validaData()
         }
     }
         private  fun validaData() {
             //get data
-            email = binding.emailEt.text.toString().trim()
-            password = binding.passwordEt.text.toString().trim()
+            email = binding.LoginEmail.text.toString().trim()
+            password = binding.LoginPassword.text.toString().trim()
 
             //validate data
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 //invalid email format
-                binding.emailEt.setError("Invalid email format")
+                binding.LoginEmail.error = "Invalid email format"
             }
             else if (TextUtils.isEmpty(password)){
                 //no password entered
-                binding.password.setError("Please enter password")
+                binding.LoginPassword.error = "Please enter password"
             }
             else{
                 //data is validated, begin login

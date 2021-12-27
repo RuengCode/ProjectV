@@ -108,8 +108,8 @@
             android:layout_height="20dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/itim"
-            android:text="ลืมรหัสผ่าน/Forgot Password?"
             android:onClick="forgotPassword"
+            android:text="ลืมรหัสผ่าน/Forgot Password?"
             android:textAlignment="center"
             android:textSize="16dp" />
 
@@ -119,6 +119,7 @@
             android:layout_marginTop="10dp"
             android:layerType="software"
             android:src="@drawable/obj_br" />
+
         <TextView
             android:id="@+id/NewRegisterText"
             android:layout_width="match_parent"
@@ -128,16 +129,16 @@
             android:text="ยังไม่มีบัญชีใช่หรือไม่ ?"
             android:textAlignment="center"
             android:textSize="16dp" />
+
         <TextView
             android:id="@+id/NewRegister"
-            android:textColor="@color/green"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/itim"
             android:text="สร้างบัญชีใหม่/Create account"
-            android:onClick="createAccount"
             android:textAlignment="center"
+            android:textColor="@color/green"
             android:textSize="16dp" />
 
 
