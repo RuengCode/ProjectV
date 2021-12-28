@@ -15,21 +15,21 @@ import com.example.projectend.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class RegisterActivity : AppCompatActivity() {
-        //ViewBinding
-        private lateinit var binding : ActivityRegisterBinding
-        //ActionBar
+    //ViewBinding
+    private lateinit var binding: ActivityRegisterBinding
+    //ActionBar
 
 
-        //ProgressDialog
-        private lateinit var progressDialog:ProgressDialog
+    //ProgressDialog
+    private lateinit var progressDialog: ProgressDialog
 
-        //FirebaseAuth
-        private lateinit var firebaseAuth: FirebaseAuth
-        private var email =""
-        private var password = ""
-        private var name = ""
-        private var address = ""
-        private var phone = ""
+    //FirebaseAuth
+    private lateinit var firebaseAuth: FirebaseAuth
+    private var email = ""
+    private var password = ""
+    private var name = ""
+    private var address = ""
+    private var phone = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,38 +64,28 @@ class RegisterActivity : AppCompatActivity() {
 
         //validate
 
-        if(TextUtils.isEmpty(name)){
+        if (TextUtils.isEmpty(name)) {
             binding.RegisterName.error = "กรุณากรอกชื่อ"
-        }
-        else if (name.length < 6){
+        } else if (name.length < 6) {
             binding.RegisterName.error = "ชื่อต้องไม่น้อยกว่า 6 ตัว"
-        }
-        else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+        } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //invalid email format
             binding.RegisterEmail.error = "ไม่ถูกต้องตามหลักอีเมล"
-        }
-        else if (TextUtils.isEmpty(password)){
+        } else if (TextUtils.isEmpty(password)) {
             //password isn't entered
             binding.RegisterPassword.error = "กรุณากรอกรหัสผ่าน"
-        }
-        else if (password.length < 7){
+        } else if (password.length < 7) {
             //password length is less than 6
             binding.RegisterPassword.error = "รหัสผ่านต้องเท่ากับหรือมากกว่า 8 ตัว"
-        }
-        else if(TextUtils.isEmpty(address)){
+        } else if (TextUtils.isEmpty(address)) {
             binding.RegisterAddress.error = "กรุณากรอกที่อยู่"
-        }
-        else if(TextUtils.isEmpty(phone)){
+        } else if (TextUtils.isEmpty(phone)) {
             binding.RegisterPhone.error = "กรุณากรอกเบอร์โทร"
-        }
-        else if(phone.length > 10){
+        } else if (phone.length > 10) {
             binding.RegisterPhone.error = "กรอกเกินจำนวน"
-        }
-        else if(phone.length < 10){
+        } else if (phone.length < 10) {
             binding.RegisterPhone.error = "กรุณากรอกเบอร์โทรให้ครบ"
-        }
-
-        else{
+        } else {
 
             firebaseSignUp()
         }
@@ -106,23 +96,23 @@ class RegisterActivity : AppCompatActivity() {
         progressDialog.show()
 
         //create account
-        firebaseAuth.createUserWithEmailAndPassword(email,password)
+        firebaseAuth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener {
                 //signup success
                 progressDialog.dismiss()
                 //get current user
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
-                Toast.makeText(this,"สมัครสมาชิกสำเร็จ",Toast.LENGTH_SHORT).show()
-                Log.d("main_email",email.toString())
+                Toast.makeText(this, "สมัครสมาชิกสำเร็จ", Toast.LENGTH_SHORT).show()
+                Log.d("main_email", email.toString())
                 //open profile
-                startActivity(Intent(this,ProfileActivity::class.java))
+                startActivity(Intent(this, MemuActivity::class.java))
                 finish()
             }
             .addOnFailureListener { e ->
                 //signup failed
                 progressDialog.dismiss()
-                Toast.makeText(this,"สมัครสมาชิกไม่สำเร็จ",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "สมัครสมาชิกไม่สำเร็จ", Toast.LENGTH_SHORT).show()
             }
     }
 

@@ -42,7 +42,7 @@
                 android:weightSum="8">
 
                 <LinearLayout
-
+                    android:id="@+id/menu1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -68,7 +68,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-
+                    android:id="@+id/menu2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -94,7 +94,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-
+                    android:id="@+id/menu3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -120,7 +120,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-
+                    android:id="@+id/menu4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -154,7 +154,7 @@
                 android:weightSum="8">
 
                 <LinearLayout
-
+                    android:id="@+id/menu5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -180,7 +180,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-
+                    android:id="@+id/menu6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -206,7 +206,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-
+                    android:id="@+id/menu7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -232,7 +232,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-
+                    android:id="@+id/menu8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"

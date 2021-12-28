@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectEnd">
         <activity
-            android:name=".activity.MemuActivity"
+            android:name=".activity.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ProfileActivity"
@@ -36,7 +36,7 @@
             android:name=".activity.ContactActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name=".activity.MemuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

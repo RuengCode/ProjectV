@@ -12,21 +12,17 @@ import com.google.firebase.auth.FirebaseUser
 
 class ProfileActivity : AppCompatActivity() {
     //ViewBinding
-    private lateinit var binding : ActivityProfileBinding
-
-
-
+    private lateinit var binding: ActivityProfileBinding
 
     //FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
-    private var email =""
+    private var email = ""
     private var password = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
 
         //init firebase auth
@@ -41,17 +37,16 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun checkUser() {
-      //check user is logged in or not
+        //check user is logged in or not
         val firebaseUser = firebaseAuth.currentUser
-        if (firebaseUser != null){
+        if (firebaseUser != null) {
             //user not null, user is logged in, get user info
             val email = firebaseUser.email
             //set to text view
             binding.ProfileBtn.text = email
-        }
-        else{
+        } else {
             //user not null, user is loggedin, goto login activity
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
     }
