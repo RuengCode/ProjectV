@@ -22,7 +22,6 @@ class LoginActivity : AppCompatActivity() {
 
     //ActionBar
 
-
     //ProgressDialog
     private lateinit var progressDialog: ProgressDialog
 
@@ -58,6 +57,10 @@ class LoginActivity : AppCompatActivity() {
         binding.Login.setOnClickListener{
             //before logging in, validate data
             validaData()
+        }
+
+        binding.ForgotPassword.setOnClickListener{
+            startActivity(Intent(this,ForgotPasswordActivity::class.java))
         }
     }
         private  fun validaData() {

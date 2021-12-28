@@ -3,6 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable-anydpi/ic_action_per.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable/bg_adapter.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable/bg_linear.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable/obj_br.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/drawable/today_recover_fix.xml" value="0.2203125" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_contact.xml" value="0.25" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_homeisolation.xml" value="0.22" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_memu.xml" value="0.12771739130434784" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/activity_test.xml" value="0.12771739130434784" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/fragment_county.xml" value="0.12771739130434784" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/fragment_covid_today.xml" value="0.12771739130434784" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/item_covid_county.xml" value="0.12771739130434784" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/item_covid_today.xml" value="0.12771739130434784" />
+        <entry key="..\:/AndroidNui/app/src/main/res/layout/item_row_covid.xml" value="0.12771739130434784" />
+        <entry key="..\:/AndroidNui/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/drawable/bg_btn_login.xml" value="0.403125" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/drawable/bg_btn_login1.xml" value="0.403125" />
         <entry key="..\:/Users/Glez/Desktop/ProjectNu/ProjectEnd/app/src/main/res/drawable/bg_color.xml" value="0.403125" />

@@ -19,7 +19,7 @@
         android:text="เบอร์โทรติดต่อฉุกเฉิน"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
 
@@ -30,9 +30,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="31dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="17dp"
-        android:layout_marginBottom="117dp"
+        android:layout_marginBottom="110dp"
         android:background="@drawable/bg_contact"
         android:orientation="vertical">
 
@@ -292,6 +292,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </RelativeLayout>
