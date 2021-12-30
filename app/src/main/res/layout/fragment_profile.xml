@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ProfileFragment">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LiNear0"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="@drawable/bg_main_linear"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:src="@drawable/zombie"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/itim"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LiNear1"
+            android:layout_width="wrap_content"
+            android:layout_height="531dp"
+            android:layout_below="@+id/LiNear0"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="-67dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/bg_linear"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tvProfileName"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_login"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/itim"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:enabled="false"
+                android:text="tvProfileName"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/tvProfileEmail"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_login"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/itim"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="tvProfileEmail"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/tvProfilePhone"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_login"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/itim"
+                android:gravity="center_vertical"
+                android:enabled="false"
+                android:paddingLeft="10dp"
+                android:text="tvProfilePhone"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/tvProfileAddress"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_login"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/itim"
+                android:gravity="center_vertical"
+                android:enabled="false"
+                android:paddingLeft="10dp"
+                android:text="tvProfileAddress"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_btn_login1"
+                android:fontFamily="@font/itim"
+                android:text="logout"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

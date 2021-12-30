@@ -4,4 +4,9 @@
         <item name="android:fontFamily">@font/itim</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="theme1">
+        <item name="android:fontFamily">@font/itim</item>
+        <item name="android:textSize">18dp</item>
+
+    </style>
 </resources>

@@ -18,6 +18,7 @@ class MyAdapter(val context: Context,val userList : List<MyDataItem>) : Recycler
         var todayNew : TextView
         var totalCase : TextView
         var newDead : TextView
+        var totalDeath : TextView
 
         init {
             date = itemView.findViewById(R.id.today_date)
@@ -26,7 +27,7 @@ class MyAdapter(val context: Context,val userList : List<MyDataItem>) : Recycler
             todayNew = itemView.findViewById(R.id.today_new)
             totalCase = itemView.findViewById(R.id.today_total_case)
             newDead = itemView.findViewById(R.id.today_new_death)
-
+            totalDeath = itemView.findViewById(R.id.today_total_death)
         }
 
     }
@@ -43,6 +44,7 @@ class MyAdapter(val context: Context,val userList : List<MyDataItem>) : Recycler
         holder.todayNew.text = userList[position].newCase.toString()
         holder.totalCase.text = userList[position].totalCase.toString()
         holder.newDead.text = userList[position].newDeath.toString()
+        holder.totalDeath.text = userList[position].totalDeath.toString()
     }
 
     override fun getItemCount(): Int {

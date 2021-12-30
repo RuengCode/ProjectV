@@ -12,11 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectEnd">
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name=".activity.MemuActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ProfileActivity"
+            android:name=".activity.FirebaseDashBoardAdminActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".activity.FirebaseRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FirebaseLoginActivity"
+            android:exported="false" />
+
         <activity
             android:name=".activity.HomeisolationActivity"
             android:exported="false" />
@@ -29,14 +37,12 @@
         <activity
             android:name=".activity.MainActivity"
             android:exported="false" />
-        <activity
-            android:name=".activity.LoginActivity"
-            android:exported="false" />
+
         <activity
             android:name=".activity.ContactActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MemuActivity"
+            android:name=".activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

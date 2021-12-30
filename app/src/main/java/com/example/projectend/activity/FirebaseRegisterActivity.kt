@@ -2,60 +2,47 @@ package com.example.projectend.activity
 
 import android.app.ProgressDialog
 import android.content.Intent
-import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.util.Patterns
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
 import com.example.projectend.R
-import com.example.projectend.databinding.ActivityRegisterBinding
+import com.example.projectend.databinding.ActivityFirebaseRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
-class RegisterActivity : AppCompatActivity() {
-    //ViewBinding
-    private lateinit var binding: ActivityRegisterBinding
-    //ActionBar
+class FirebaseRegisterActivity : AppCompatActivity() {
 
-
-    //ProgressDialog
-    private lateinit var progressDialog: ProgressDialog
-
-    //FirebaseAuth
+    private lateinit var binding: ActivityFirebaseRegisterBinding
     private lateinit var firebaseAuth: FirebaseAuth
-    private var email = ""
-    private var password = ""
-    private var name = ""
-    private var address = ""
-    private var phone = ""
+    private lateinit var progressDialog: ProgressDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        binding = ActivityFirebaseRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        //configure progress dialog
-        progressDialog = ProgressDialog(this)
-        progressDialog.setTitle("Please wait")
-        progressDialog.setMessage("Creating account In...")
-        progressDialog.setCanceledOnTouchOutside(false)
-
-        //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()
 
-        //handle click, begin signup
-        binding.singUpBtn.setOnClickListener {
-            //validate data
-            validate()
-        }
+        progressDialog = ProgressDialog(this)
+        progressDialog.setTitle("Please wait")
+        progressDialog.setCanceledOnTouchOutside(false)
 
+        binding.singUpBtn.setOnClickListener {
+
+            validateData()
+        }
     }
 
-    private fun validate() {
-        //get data
+    private var name = ""
+    private var email = ""
+    private var password = ""
+    private var address = ""
+    private var phone = ""
+
+
+    private fun validateData() {
         name = binding.RegisterName.text.toString().trim()
         email = binding.RegisterEmail.text.toString().trim()
         password = binding.RegisterPassword.text.toString().trim()
@@ -87,38 +74,51 @@ class RegisterActivity : AppCompatActivity() {
             binding.RegisterPhone.error = "กรุณากรอกเบอร์โทรให้ครบ"
         } else {
 
-            firebaseSignUp()
+            createUserAccount()
         }
     }
 
-    private fun firebaseSignUp() {
-        //show progress
+    private fun createUserAccount() {
+        progressDialog.setMessage("Creating Account...")
         progressDialog.show()
 
-        //create account
         firebaseAuth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener {
-                //signup success
-                progressDialog.dismiss()
-                //get current user
-                val firebaseUser = firebaseAuth.currentUser
-                val email = firebaseUser!!.email
-                Toast.makeText(this, "สมัครสมาชิกสำเร็จ", Toast.LENGTH_SHORT).show()
-                Log.d("main_email", email.toString())
-                //open profile
-                startActivity(Intent(this, MemuActivity::class.java))
-                finish()
+                updateUserInfo()
             }
-            .addOnFailureListener { e ->
-                //signup failed
+            .addOnFailureListener {
                 progressDialog.dismiss()
-                Toast.makeText(this, "สมัครสมาชิกไม่สำเร็จ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Fail", Toast.LENGTH_SHORT).show()
             }
     }
 
+    private fun updateUserInfo() {
+        progressDialog.setMessage("Saving user info...")
 
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()//go back to previous activity,when back button of activity clicked
-        return super.onSupportNavigateUp()
+        val timeStamp = System.currentTimeMillis()
+        val uid = firebaseAuth.uid
+        val hasMap: HashMap<String, Any?> = HashMap()
+        hasMap["uid"] = uid
+        hasMap["email"] = email
+        hasMap["name"] = name
+        hasMap["address"] = address
+        hasMap["phone"] = phone
+        hasMap["profileImage"] = ""
+        hasMap["userType"] = "user"
+        hasMap["timeStamp"] = timeStamp
+
+        val ref = FirebaseDatabase.getInstance().getReference("Users")
+        ref.child(uid!!)
+            .setValue(hasMap)
+            .addOnSuccessListener {
+                progressDialog.dismiss()
+                startActivity(Intent(this, MemuActivity::class.java))
+            }
+            .addOnFailureListener { e ->
+                progressDialog.dismiss()
+                Toast.makeText(this, "failed Saveing user", Toast.LENGTH_SHORT).show()
+            }
+
+
     }
 }

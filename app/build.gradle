@@ -61,4 +61,14 @@ dependencies {
 
     //Circle view
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //image slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0-appcompat'
+
+    //img
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //splash
+    implementation 'com.airbnb.android:lottie:3.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
 }
