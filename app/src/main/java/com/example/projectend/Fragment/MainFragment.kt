@@ -13,10 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projectend.Interface.ApiInterface
 import com.example.projectend.R
-import com.example.projectend.activity.FirebaseLoginActivity
-import com.example.projectend.activity.FirebaseRegisterActivity
-import com.example.projectend.activity.MemuActivity
-import com.example.projectend.activity.SplashActivity
+import com.example.projectend.activity.*
 import com.example.projectend.adapter.MyAdapter
 import com.example.projectend.adapter.MySliderImageAdapter
 import com.example.projectend.data.MyDataItem
@@ -77,6 +74,10 @@ class MainFragment : Fragment() {
             firebaseAuth.signOut()
             checkUser()
         }
+        menu4.setOnClickListener {
+            val intent = Intent(context, ListHomeActivity::class.java)
+            startActivity(intent)
+        }
 
         getData(view)
 
@@ -93,12 +94,11 @@ class MainFragment : Fragment() {
 
     private fun checkUser() {
         val firebaseUser = firebaseAuth.currentUser
-        if (firebaseUser == null){
+        if (firebaseUser == null) {
             val intent = Intent(context, SplashActivity::class.java)
             startActivity(intent)
 
-        }
-        else{
+        } else {
 
         }
 
@@ -111,7 +111,8 @@ class MainFragment : Fragment() {
         imageSlider.isAutoCycle = true
         imageSlider.startAutoCycle()
     }
-    private fun getData(view : View) {
+
+    private fun getData(view: View) {
         val retrofitBuilder = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl(BASE_URL)
@@ -132,16 +133,16 @@ class MainFragment : Fragment() {
                 linearLayoutManager = LinearLayoutManager(context)
                 rvCovidToday.layoutManager = linearLayoutManager
 
-                myAdapter = MyAdapter(requireContext(),responseBody)
+                myAdapter = MyAdapter(requireContext(), responseBody)
                 myAdapter.notifyDataSetChanged()
                 rvCovidToday.adapter = myAdapter
 
-                Log.d("main",response.body().toString())
+                Log.d("main", response.body().toString())
 
             }
 
             override fun onFailure(call: Call<List<MyDataItem>?>, t: Throwable) {
-                Toast.makeText(context,"ข้อมูลไม่เข้า", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "ข้อมูลไม่เข้า", Toast.LENGTH_SHORT).show()
             }
         })
     }

@@ -61,46 +61,80 @@
             android:textSize="25dp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/LoginEmail"
-            android:layout_width="310dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/TextViewLogin"
-            android:layout_marginLeft="20dp"
+        <LinearLayout
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg_btn_login"
-            android:drawableLeft="@drawable/email"
-            android:drawablePadding="15dp"
-            android:fontFamily="@font/itim"
-            android:hint="กรอกอีเมล/E-mail"
-            android:inputType="textEmailAddress"
-            android:padding="10dp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/LoginPassword"
-            android:layout_width="310dp"
-            android:layout_height="55dp"
-            android:layout_below="@+id/TextViewLogin"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/bg_btn_login"
-            android:drawableLeft="@drawable/unlock"
-            android:drawablePadding="6dp"
-            android:fontFamily="@font/itim"
-            android:hint="กรอกรหัสผ่าน/Password"
-            android:inputType="textPassword"
-            android:padding="10dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:hint="อีเมล"
+                android:theme="@style/fontItim"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/email">
 
-        <Button
-            android:id="@+id/Login"
-            android:layout_width="310dp"
-            android:layout_height="55dp"
-            android:layout_marginLeft="20dp"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LoginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/itim"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:hint="รหัสผ่าน"
+                android:theme="@style/fontItim"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/unlock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/itim"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:background="@drawable/bg_btn_login1"
-            android:fontFamily="@font/itim"
-            android:text="เข้าสู่ระบบ/Login"
-            android:textSize="18dp" />
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_login1"
+                android:fontFamily="@font/itim"
+                android:text="เข้าสู่ระบบ/login"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/ForgotPassword"

@@ -27,9 +27,10 @@ class SplashActivity : AppCompatActivity() {
 
         Handler().postDelayed(Runnable {
             checkUser()
-        }, 6000L)
+        }, 1L)
 
     }
+
 
     private fun checkUser() {
         val firebaseUser = firebaseAuth.currentUser

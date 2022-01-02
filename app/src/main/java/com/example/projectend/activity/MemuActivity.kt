@@ -17,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
 class MemuActivity : AppCompatActivity() {
-    private lateinit var  bottonNavigation : BottomNavigationView
+    private lateinit var bottonNavigation: BottomNavigationView
 
     private lateinit var firebaseAuth: FirebaseAuth
 
@@ -25,10 +25,10 @@ class MemuActivity : AppCompatActivity() {
     private val covidTodayFragment = CovidTodayFragment()
     private val countyFragment = CountyFragment()
     private val profileFragment = ProfileFragment()
-    private lateinit var  menu1 : LinearLayout
+    private lateinit var menu1: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       setContentView(R.layout.activity_memu)
+        setContentView(R.layout.activity_memu)
 
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
@@ -37,7 +37,7 @@ class MemuActivity : AppCompatActivity() {
 
         bottonNavigation = findViewById(R.id.bottom_navigation)
         bottonNavigation.setOnNavigationItemSelectedListener {
-            when(it.itemId){
+            when (it.itemId) {
                 R.id.page_1 -> replaceFragment(mainFragment)
                 R.id.page_2 -> replaceFragment(covidTodayFragment)
                 R.id.page_3 -> replaceFragment(countyFragment)
@@ -51,18 +51,17 @@ class MemuActivity : AppCompatActivity() {
 
     private fun checkUser() {
         val firebaseUser = firebaseAuth.currentUser
-        if (firebaseUser == null){
+        if (firebaseUser == null) {
 
-        }
-        else{
+        } else {
 
         }
     }
 
-    private fun replaceFragment(fragment: Fragment){
-        if (fragment != null){
+    private fun replaceFragment(fragment: Fragment) {
+        if (fragment != null) {
             val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container,fragment)
+            transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
 
         }

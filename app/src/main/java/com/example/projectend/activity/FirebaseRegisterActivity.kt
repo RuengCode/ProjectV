@@ -41,7 +41,6 @@ class FirebaseRegisterActivity : AppCompatActivity() {
     private var address = ""
     private var phone = ""
 
-
     private fun validateData() {
         name = binding.RegisterName.text.toString().trim()
         email = binding.RegisterEmail.text.toString().trim()
@@ -53,16 +52,17 @@ class FirebaseRegisterActivity : AppCompatActivity() {
 
         if (TextUtils.isEmpty(name)) {
             binding.RegisterName.error = "กรุณากรอกชื่อ"
-        } else if (name.length < 6) {
-            binding.RegisterName.error = "ชื่อต้องไม่น้อยกว่า 6 ตัว"
-        } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            //invalid email format
+        } else if (name.length <= 10) {
+            binding.RegisterName.error = "ชื่อต้องไม่น้อยกว่า 10 ตัว"
+        }
+        else if (name.length > 30){
+            binding.RegisterName.error = "ชื่อต้องต่ำกว่า 30 ตัว"
+        }
+        else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             binding.RegisterEmail.error = "ไม่ถูกต้องตามหลักอีเมล"
         } else if (TextUtils.isEmpty(password)) {
-            //password isn't entered
             binding.RegisterPassword.error = "กรุณากรอกรหัสผ่าน"
         } else if (password.length < 7) {
-            //password length is less than 6
             binding.RegisterPassword.error = "รหัสผ่านต้องเท่ากับหรือมากกว่า 8 ตัว"
         } else if (TextUtils.isEmpty(address)) {
             binding.RegisterAddress.error = "กรุณากรอกที่อยู่"
@@ -118,7 +118,6 @@ class FirebaseRegisterActivity : AppCompatActivity() {
                 progressDialog.dismiss()
                 Toast.makeText(this, "failed Saveing user", Toast.LENGTH_SHORT).show()
             }
-
 
     }
 }

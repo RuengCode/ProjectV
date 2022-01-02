@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/admin_1"
+        android:enabled="true"
+        android:icon="@drawable/m_1"
+        android:title="admin_1"/>
+    <item
+        android:id="@+id/admin_2"
+        android:enabled="true"
+        android:icon="@drawable/m_2"
+        android:title="admin_2"/>
+    <item
+        android:id="@+id/admin_3"
+        android:enabled="true"
+        android:icon="@drawable/m_3"
+        android:title="admin_3"/>
+    <item
+        android:id="@+id/admin_4"
+        android:enabled="true"
+        android:icon="@drawable/m_4"
+        android:title="admin_4"/>
+    <item
+        android:id="@+id/admin_5"
+        android:enabled="true"
+        android:icon="@drawable/m_5"
+        android:title="admin_5"/>
+</menu>

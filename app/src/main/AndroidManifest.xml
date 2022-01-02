@@ -12,37 +12,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectEnd">
         <activity
+            android:name=".activity.AddDataToListHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileEditActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.MemuActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.FirebaseDashBoardAdminActivity"
+            android:name=".activity.SplashActivity"
             android:exported="false" />
-
         <activity
             android:name=".activity.FirebaseRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".activity.FirebaseLoginActivity"
             android:exported="false" />
-
         <activity
             android:name=".activity.HomeisolationActivity"
             android:exported="false" />
-        <activity
-            android:name=".activity.ForgotPasswordActivity"
-            android:exported="false" />
+
         <activity
             android:name=".TestActivity"
             android:exported="false" />
         <activity
             android:name=".activity.MainActivity"
             android:exported="false" />
-
         <activity
             android:name=".activity.ContactActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name=".activity.FirebaseDashBoardAdminActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

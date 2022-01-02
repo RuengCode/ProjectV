@@ -21,7 +21,7 @@
         android:id="@+id/text_covid_zero_apps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Covid Zero Apps"
+        android:text="KSU Fighting Covid-19 Apps"
         android:fontFamily="@font/itim"
         android:textSize="24dp"
         android:layout_marginBottom="8dp"
