@@ -2,6 +2,7 @@ package com.example.projectend.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.system.Os.remove
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
@@ -15,11 +16,11 @@ import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 
 class ListUserActivity : AppCompatActivity() {
-    private lateinit var dbRef : DatabaseReference
+    private lateinit var dbRef: DatabaseReference
     private lateinit var userRecyclerView: RecyclerView
     private lateinit var firebaseAuth: FirebaseAuth
-    private lateinit var userAdapter:ListUserAdapter
-    private lateinit var userArrayList : ArrayList<User>
+    private lateinit var userArrayList: ArrayList<User>
+    private lateinit var adapterV: ListUserAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,24 +35,25 @@ class ListUserActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-
-
-
-
     }
 
     private fun getUserData() {
         dbRef = FirebaseDatabase.getInstance().getReference("Users")
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()){
-                    for (userSnapshot in snapshot.children){
+                if (snapshot.exists()) {
+                    for (userSnapshot in snapshot.children) {
+
                         val user = userSnapshot.getValue(User::class.java)
+
                         userArrayList.add(user!!)
+
                     }
 
-                    userRecyclerView.adapter = ListUserAdapter(this@ListUserActivity,userArrayList)
-                  
+                    adapterV = ListUserAdapter(this@ListUserActivity, userArrayList)
+                    userRecyclerView.adapter = adapterV
+
+                    adapterV.notifyDataSetChanged()
 
                 }
             }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_color"
+    android:background="#303368"
     tools:context=".Fragment.MainFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -31,12 +31,13 @@
                     android:fontFamily="@font/itim"
                     android:text="Ksu Fighting Covid-19"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="22dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
+                android:background="#F2F2F2"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
                 android:layout_marginTop="15dp"
@@ -149,9 +150,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:background="#F2F2F2"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
-
                 android:weightSum="8">
 
                 <LinearLayout
@@ -273,7 +274,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/itim"
                     android:text="ข้อมูลข่าวสาร"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -316,7 +317,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/itim"
                     android:text="สถานการณ์โควิด ประจำวัน"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -345,7 +346,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/itim"
                     android:text="ผู้เดินทางที่คัดกรองสะสม"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />
             </LinearLayout>

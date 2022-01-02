@@ -30,10 +30,10 @@ class AdminDashBoardFragment : Fragment() {
     private lateinit var adminEmail: TextView
     private lateinit var itemCountUser: TextView
     private lateinit var listUserAll: LinearLayout
-    private lateinit var userArrayList : ArrayList<User>
-    private lateinit var dbRef : DatabaseReference
+    private lateinit var userArrayList: ArrayList<User>
+    private lateinit var dbRef: DatabaseReference
     private lateinit var progressDialog: ProgressDialog
-    private lateinit var refresh : SwipeRefreshLayout
+    private lateinit var refresh: SwipeRefreshLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -59,17 +59,17 @@ class AdminDashBoardFragment : Fragment() {
         userArrayList = arrayListOf<User>()
         getUserData()
 
-        val logoutAdmin : Button = view.findViewById(R.id.logoutAdmin)
+        val logoutAdmin: Button = view.findViewById(R.id.logoutAdmin)
         logoutAdmin.setOnClickListener {
             context?.let { it1 ->
                 MaterialAlertDialogBuilder(it1)
                     .setMessage("you want logout or exit ?")
-                    .setPositiveButton("Logout"){dialog, which->
+                    .setPositiveButton("Logout") { dialog, which ->
 
                         firebaseAuth.signOut()
                         checkUser()
                     }
-                    .setNegativeButton("Cancel"){dialog, which->
+                    .setNegativeButton("Cancel") { dialog, which ->
 
                     }
                     .show()
@@ -83,7 +83,7 @@ class AdminDashBoardFragment : Fragment() {
     private fun refreshData() {
 
         refresh.setOnRefreshListener {
-            Toast.makeText(context,"เรียบร้อยจ้า",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "เรียบร้อยจ้า", Toast.LENGTH_SHORT).show()
             refresh.isRefreshing = false
         }
     }
@@ -103,9 +103,7 @@ class AdminDashBoardFragment : Fragment() {
         dbRef = FirebaseDatabase.getInstance().getReference("Users")
         dbRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-
                 val counter = snapshot.childrenCount
-
                 itemCountUser.text = counter.toString()
 
             }

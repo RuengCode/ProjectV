@@ -27,7 +27,7 @@
             android:name=".activity.MemuActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name=".activity.FirebaseDashBoardAdminActivity"
             android:exported="false" />
         <activity
             android:name=".activity.FirebaseRegisterActivity"
@@ -49,7 +49,7 @@
             android:name=".activity.ContactActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.FirebaseDashBoardAdminActivity"
+            android:name=".activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

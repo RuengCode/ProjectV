@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#30478C"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TestActivity">
-
     <TextView
-        android:id="@+id/text1"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="342dp"
-        android:layout_marginEnd="43dp"
-        android:fontFamily="@font/itim"
-        android:paddingLeft="20dp"
-        android:text="Choose what to learn roday?"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        android:textStyle="bold" />
+        android:background="#2C3540"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+    <LinearLayout
+        android:background="#D9D9D9"
+        android:layout_marginTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="520dp">
 
 
-</RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

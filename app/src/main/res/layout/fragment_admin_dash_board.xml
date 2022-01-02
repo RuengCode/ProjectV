@@ -2,8 +2,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bg_color"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_admin_main_1"
     tools:context=".Fragment.AdminDashBoardFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -12,44 +12,42 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_weight="1"
-            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/bg_admin_main"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/adminImage"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:textAlignment="center"
                         android:src="@drawable/zombie"
-                        app:civ_border_color="@color/green"
+                        android:textAlignment="center"
+                        app:civ_border_color="#2196F3"
                         app:civ_border_width="2dp" />
 
                     <LinearLayout
-                        android:layout_marginLeft="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:orientation="vertical">
 
@@ -59,7 +57,7 @@
                             android:fontFamily="@font/itim"
                             android:text="ยินดีต้อนรับเข้าสู่ Back End!!!"
                             android:textAlignment="center"
-                            android:textColor="@color/black"
+                            android:textColor="#686262"
                             android:textSize="20dp" />
 
                         <LinearLayout
@@ -73,7 +71,7 @@
                                 android:fontFamily="@font/itim"
                                 android:text="ชื่อ : "
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="#686262"
                                 android:textSize="20dp" />
 
                             <TextView
@@ -83,7 +81,7 @@
                                 android:fontFamily="@font/itim"
                                 android:text="adminName"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="#686262"
                                 android:textSize="20dp" />
                         </LinearLayout>
 
@@ -98,7 +96,7 @@
                                 android:fontFamily="@font/itim"
                                 android:text="อีเมล : "
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="#686262"
                                 android:textSize="20dp" />
 
                             <TextView
@@ -108,15 +106,13 @@
                                 android:fontFamily="@font/itim"
                                 android:text="adminEmail"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="#686262"
                                 android:textSize="20dp" />
                         </LinearLayout>
 
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-
-
 
 
             <LinearLayout
@@ -225,6 +221,7 @@
                 <!--            </LinearLayout>-->
 
             </LinearLayout>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/logoutAdmin"
                 style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
@@ -236,8 +233,6 @@
         </LinearLayout>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-
 
 
 </FrameLayout>

@@ -82,11 +82,11 @@ class MainFragment : Fragment() {
         getData(view)
 
         val imageList: ArrayList<String> = ArrayList()
-        imageList.add("https://www.img.in.th/images/2c64237a06e358914c5ef2dc24eb1263.png")
-        imageList.add("https://www.img.in.th/images/a73e6de619e788582c7c810ff8191547.png")
-        imageList.add("https://www.img.in.th/images/7bafd8e102de6d5936456af35a2e3ba4.png")
-        imageList.add("https://www.img.in.th/images/c5c6b59928c0d1845226544330859683.png")
-        imageList.add("https://www.img.in.th/images/b71741d8278081a7361802882fd225bd.png")
+        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
+        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
+        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
+        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
+        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
         setImageInSlider(imageList, imageSlider)
 
         return view

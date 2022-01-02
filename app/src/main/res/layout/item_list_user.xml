@@ -29,7 +29,7 @@
                 android:layout_marginBottom="10dp"
                 android:src="@drawable/zombie"
                 android:textAlignment="center"
-                app:civ_border_color="@color/green"
+                app:civ_border_color="@color/gray"
                 app:civ_border_width="2dp" />
 
             <LinearLayout
@@ -87,6 +87,7 @@
                 </LinearLayout>
 
                 <Button
+
                     android:id="@+id/deleteUser1"
                     android:layout_width="80dp"
                     android:layout_height="40dp"

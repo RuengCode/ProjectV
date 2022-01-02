@@ -8,11 +8,11 @@ class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
-        val txt = findViewById<TextView>(R.id.text1)
-        txt.setOnClickListener {
-            val dialog = CustomDialogFragment()
-            dialog.show(supportFragmentManager,"Hello world")
-        }
+//        val txt = findViewById<TextView>(R.id.text1)
+//        txt.setOnClickListener {
+//            val dialog = CustomDialogFragment()
+//            dialog.show(supportFragmentManager,"Hello world")
+//        }
 
     }
 }
