@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_color"
+    android:background="#303368"
     tools:context=".Fragment.CovidTodayFragment">
 
     <LinearLayout
@@ -18,7 +18,7 @@
             android:fontFamily="@font/itim"
             android:text="สถานการณ์โควิดวันนี้"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20dp" />
 
         <androidx.recyclerview.widget.RecyclerView

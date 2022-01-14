@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#303368"
     tools:context=".activity.SplashActivity">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -24,6 +25,7 @@
         android:text="KSU Fighting Covid-19 Apps"
         android:fontFamily="@font/itim"
         android:textSize="24dp"
+        android:textColor="@color/white"
         android:layout_marginBottom="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +38,7 @@
         android:text="Version 1.0"
         android:fontFamily="@font/itim"
         android:textSize="14sp"
+        android:textColor="@color/white"
         android:layout_marginBottom="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

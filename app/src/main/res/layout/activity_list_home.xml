@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#303368"
     tools:context=".activity.ListHomeActivity">
 
     <TextView
         android:id="@+id/tvView"
         android:text="กักตัว"
         android:textSize="18dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textAlignment="center"
         android:fontFamily="@font/itim"
         android:layout_width="match_parent"

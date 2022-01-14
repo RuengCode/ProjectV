@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EDF2F4"
     android:orientation="vertical"
     tools:context=".activity.AddDataToListHomeActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/itim"
-            android:text="Homeisolation"
+            android:text="HomeIsolation"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp" />

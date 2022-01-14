@@ -15,7 +15,7 @@
             android:id="@+id/LiNear0"
             android:layout_width="match_parent"
             android:layout_height="270dp"
-            android:background="@drawable/bg_main_linear"
+            android:background="#303368"
             android:orientation="vertical">
 
             <LinearLayout
@@ -45,7 +45,7 @@
                 android:fontFamily="@font/itim"
                 android:text="Profile"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="30dp"
                 android:textStyle="bold" />
         </LinearLayout>

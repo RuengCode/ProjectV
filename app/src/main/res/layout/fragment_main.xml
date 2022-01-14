@@ -272,6 +272,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="w"
                     android:fontFamily="@font/itim"
                     android:text="ข้อมูลข่าวสาร"
                     android:textColor="@color/white"
@@ -285,7 +286,7 @@
                 android:layout_marginTop="5dp"
                 android:orientation="vertical">
 
-                <com.smarteist.autoimageslider.SliderView
+                 <com.smarteist.autoimageslider.SliderView
                     android:id="@+id/imageSlider"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"

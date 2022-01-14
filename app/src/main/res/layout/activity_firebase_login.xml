@@ -11,7 +11,7 @@
         android:id="@+id/LiNear0"
         android:layout_width="match_parent"
         android:layout_height="270dp"
-        android:background="@drawable/bg_main_linear"
+        android:background="#303368"
         android:orientation="vertical">
 
         <ImageView
@@ -29,7 +29,7 @@
             android:fontFamily="@font/itim"
             android:text="KSU Fighting Covid-19"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:textStyle="bold" />
 
@@ -62,9 +62,9 @@
             android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -88,10 +88,11 @@
                     android:textColor="@color/black" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="vertical">
 

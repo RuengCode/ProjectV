@@ -1,28 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#303368"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/ratingHeaderTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:gravity="center"
-        android:text="Top Start"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/itim"
+        android:text="แบบประเมินความเสี่ยง"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RatingBar
-        style="@style/Widget.AppCompat.RatingBar.Indicator"
-        android:layout_width="match_parent"
+    <RadioGroup
+        android:layout_gravity="center"
+        android:background="@drawable/bg_linear_1"
+        android:id="@+id/ratingRadioGroup1"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingHeaderTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <TextView
+            android:id="@+id/TextV011"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/itim"
+            android:text="ท่านเดินทางมาจากพื้นที่เสียงหรือไม่"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioButton
+                android:id="@+id/excellentRadioButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/itim"
+                android:textSize="16dp"
+                android:text="ใช่"
+                />
+            <RadioButton
+                android:id="@+id/excellentRadioButton21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/itim"
+                android:textSize="16dp"
+                android:text="ไม่ใช่"
+                 />
+
+    </RadioGroup>
+    <RadioGroup
+        android:layout_gravity="center"
+        android:background="@drawable/bg_linear_1"
+        android:id="@+id/ratingRadioGroup"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingHeaderTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <TextView
+            android:id="@+id/TextV01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/itim"
+            android:text="ท่านได้สัมผัสใกล้ชิดกับบุคคลที่มาจากพื้นที่มีการระบาดอย่างต่อเนื่องหรือไม่"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/excellentRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:textSize="16dp"
+            android:text="ใช่"
+            />
+        <RadioButton
+            android:id="@+id/excellentRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:textSize="16dp"
+            android:text="ไม่ใช่"
+            />
+
+    </RadioGroup>
+    <RadioGroup
+        android:layout_gravity="center"
+        android:background="@drawable/bg_linear_1"
+        android:id="@+id/ratingRadioGroup11"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingHeaderTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <TextView
+            android:id="@+id/TextV013"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/itim"
+            android:text="ท่านได้สัมผัสใกล้ชิดผู้ป่วยที่เข้าข่าย/ยืนยันติดเชื้อไวรัส Covid-19 หรือไม่"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/excellentRadioButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:textSize="16dp"
+            android:text="ใช่"
+            />
+        <RadioButton
+            android:id="@+id/excellentRadioButton26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:textSize="16dp"
+            android:text="ไม่ใช่"
+            />
+
+        <TextView
+            android:id="@+id/TextV04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:text="ท่านเดินทางมาจากจังหวัดไหน"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EdText1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/itim"
+            android:hint="ระบุ"
+            android:textSize="16dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_login1"
+        android:fontFamily="@font/itim"
+        android:text="ยืนยัน"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingRadioGroup" />
+
+</LinearLayout>

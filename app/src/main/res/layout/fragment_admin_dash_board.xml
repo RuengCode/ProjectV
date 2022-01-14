@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_admin_main_1"
+    android:background="#303368"
     tools:context=".Fragment.AdminDashBoardFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -116,7 +116,6 @@
 
 
             <LinearLayout
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

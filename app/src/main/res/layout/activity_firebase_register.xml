@@ -11,7 +11,7 @@
         android:id="@+id/LiNear0"
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:background="@drawable/bg_main_linear"
+        android:background="#303368"
         android:orientation="vertical">
 
         <com.airbnb.lottie.LottieAnimationView
