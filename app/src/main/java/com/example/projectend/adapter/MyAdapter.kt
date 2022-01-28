@@ -45,8 +45,7 @@ class MyAdapter(val context: Context,val userList : List<MyDataItem>) : Recycler
         holder.totalCase.text = userList[position].totalCase.toString()
         holder.newDead.text = userList[position].newDeath.toString()
         holder.totalDeath.text = userList[position].totalDeath.toString()
-        notifyDataSetChanged()
-        notifyDataSetChanged()
+
     }
 
 

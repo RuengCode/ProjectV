@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/bg_admin_main"
+                android:background="@drawable/bg_admin_main_3"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -57,7 +57,7 @@
                             android:fontFamily="@font/itim"
                             android:text="ยินดีต้อนรับเข้าสู่ Back End!!!"
                             android:textAlignment="center"
-                            android:textColor="#686262"
+                            android:textColor="@color/white"
                             android:textSize="20dp" />
 
                         <LinearLayout
@@ -71,7 +71,7 @@
                                 android:fontFamily="@font/itim"
                                 android:text="ชื่อ : "
                                 android:textAlignment="center"
-                                android:textColor="#686262"
+                                android:textColor="@color/white"
                                 android:textSize="20dp" />
 
                             <TextView
@@ -81,7 +81,7 @@
                                 android:fontFamily="@font/itim"
                                 android:text="adminName"
                                 android:textAlignment="center"
-                                android:textColor="#686262"
+                                android:textColor="@color/white"
                                 android:textSize="20dp" />
                         </LinearLayout>
 
@@ -96,7 +96,7 @@
                                 android:fontFamily="@font/itim"
                                 android:text="อีเมล : "
                                 android:textAlignment="center"
-                                android:textColor="#686262"
+                                android:textColor="@color/white"
                                 android:textSize="20dp" />
 
                             <TextView
@@ -106,7 +106,7 @@
                                 android:fontFamily="@font/itim"
                                 android:text="adminEmail"
                                 android:textAlignment="center"
-                                android:textColor="#686262"
+                                android:textColor="@color/white"
                                 android:textSize="20dp" />
                         </LinearLayout>
 

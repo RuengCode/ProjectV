@@ -9,4 +9,7 @@
         <item name="android:textSize">18dp</item>
 
     </style>
+    <style name="btnColor">
+        <item name="android:background">@drawable/bg_btn_login1</item>
+    </style>
 </resources>

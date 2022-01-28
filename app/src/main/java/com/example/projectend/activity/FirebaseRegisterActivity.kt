@@ -112,7 +112,8 @@ class FirebaseRegisterActivity : AppCompatActivity() {
             .setValue(hasMap)
             .addOnSuccessListener {
                 progressDialog.dismiss()
-                startActivity(Intent(this, MemuActivity::class.java))
+
+                startActivity(Intent(this, FirebaseLoginActivity::class.java))
             }
             .addOnFailureListener { e ->
                 progressDialog.dismiss()

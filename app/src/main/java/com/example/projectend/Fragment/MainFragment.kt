@@ -78,7 +78,10 @@ class MainFragment : Fragment() {
             val intent = Intent(context, ListHomeActivity::class.java)
             startActivity(intent)
         }
-
+        menu8.setOnClickListener {
+            val intent = Intent(context, MapCovidActivity::class.java)
+            startActivity(intent)
+        }
         getData(view)
 
         val imageList: ArrayList<String> = ArrayList()

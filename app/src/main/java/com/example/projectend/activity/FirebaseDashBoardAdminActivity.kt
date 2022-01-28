@@ -3,6 +3,7 @@ package com.example.projectend.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.projectend.Fragment.AdminDashBoardFragment
 import com.example.projectend.Fragment.MainFragment
@@ -16,6 +17,7 @@ class FirebaseDashBoardAdminActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFirebaseDashBoardAdminBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private val adminDashBoardFragment = AdminDashBoardFragment()
+    private var backPressedTime : Long = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFirebaseDashBoardAdminBinding.inflate(layoutInflater)
@@ -41,7 +43,15 @@ class FirebaseDashBoardAdminActivity : AppCompatActivity() {
             }
             true
         }
+
+
     }
+
+    override fun onBackPressed() {
+
+    }
+
+
     private fun replaceFragment(fragment: Fragment) {
         if (fragment != null) {
             val transaction = supportFragmentManager.beginTransaction()
@@ -50,6 +60,7 @@ class FirebaseDashBoardAdminActivity : AppCompatActivity() {
 
         }
     }
+
 //    private fun checkUser() {
 //        val firebaseUser = firebaseAuth.currentUser
 //        if (firebaseUser == null){

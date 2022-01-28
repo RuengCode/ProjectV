@@ -67,8 +67,11 @@
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable-xhdpi/bg_admin_main_1.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable-xhdpi/bg_dashboard.xml" value="0.3497716894977169" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable-xhdpi/bg_delete.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable/bg_adapter.xml" value="0.2152777777777778" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable/bg_admin_main.xml" value="0.35342465753424657" />
+        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable/bg_admin_main_3.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable/bg_btn_login1.xml" value="0.31574074074074077" />
+        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable/bg_color.xml" value="0.2152777777777778" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable/bg_image_1.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable/bg_linear_1.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/drawable/bg_main_linear.xml" value="0.403125" />
@@ -85,10 +88,12 @@
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_firebase_login.xml" value="0.3439814814814815" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_firebase_register.xml" value="0.25" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_forgot_password.xml" value="0.3439814814814815" />
-        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_homeisolation.xml" value="0.3439814814814815" />
+        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_homeisolation.xml" value="0.25" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_list_home.xml" value="0.3439814814814815" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_list_user.xml" value="0.3439814814814815" />
-        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_main.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_main.xml" value="0.40185185185185185" />
+        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_map_covid.xml" value="0.3439814814814815" />
+        <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_maps.xml" value="0.3439814814814815" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_memu.xml" value="0.2679425837320574" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_profile.xml" value="0.21875" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/activity_profile_edit.xml" value="0.25" />
@@ -107,33 +112,6 @@
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/layout/loading_fragment.xml" value="0.5" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/menu/admin_bottom_navigation_menu.xml" value="0.19675925925925927" />
         <entry key="..\:/Users/Ruengjaratz/Documents/ProjectV/app/src/main/res/menu/show_menu.xml" value="0.19953703703703704" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_add_data_to_list_home.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_contact.xml" value="0.33" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_firebase_dash_board_admin.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_firebase_login.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_firebase_register.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_homeisolation.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_list_home.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_list_user.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_memu.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_profile_edit.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_splash.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/activity_test.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/add_item.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/fragment_admin_dash_board.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/fragment_county.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/fragment_covid_today.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/fragment_custom_dialog.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/fragment_main.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/fragment_profile.xml" value="0.21" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/image_holder.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/item_covid_county.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/item_covid_today.xml" value="0.25" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/item_list_user.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/item_row_covid.xml" value="0.17481884057971014" />
-        <entry key="..\:/Users/nui/Documents/ProjectVN/app/src/main/res/layout/loading_fragment.xml" value="0.17481884057971014" />
       </map>
     </option>
   </component>

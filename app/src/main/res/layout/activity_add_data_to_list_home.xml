@@ -91,6 +91,7 @@
             app:counterMaxLength="30">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edHomeName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/itim"
@@ -111,6 +112,7 @@
             android:hint="อุณหภูมิ">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edHomeTempCC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/itim"
@@ -133,6 +135,7 @@
             android:hint="ค่าการไหลเวียนของเลือด(Pi)">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edHomeTempPi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/itim"
@@ -155,6 +158,7 @@
             android:hint="อัตราหายใจ(RR)">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edHomeTempRR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/itim"
@@ -177,6 +181,7 @@
             android:hint="ระดับออกซิเจนในเลือด(SpO2)">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edHomeTempSpO2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/itim"
@@ -199,6 +204,7 @@
             android:hint="อัตราการเต้นของหัวใจ(PR bpm)">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edHomeTempPR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/itim"
@@ -337,6 +343,7 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/submitHome"
             android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

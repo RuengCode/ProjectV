@@ -99,7 +99,7 @@ class ProfileEditActivity : AppCompatActivity() {
     private fun uploadImage() {
         progressDialog.setMessage("Uploading profile image")
         progressDialog.show()
-        val filePathAndName = "ProfileImages/" + firebaseAuth.uid
+                                                                                                                                                                                                                                                                                                                                                                                val filePathAndName = "ProfileImages/" + firebaseAuth.uid
         val reference = FirebaseStorage.getInstance().getReference(filePathAndName)
         reference.putFile(imageUri!!)
             .addOnSuccessListener { taskSnapshot ->

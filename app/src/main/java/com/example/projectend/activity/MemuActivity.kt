@@ -47,6 +47,11 @@ class MemuActivity : AppCompatActivity() {
             true
         }
 
+
+    }
+
+    override fun onBackPressed() {
+
     }
 
     private fun checkUser() {
