@@ -67,12 +67,12 @@ class FirebaseLoginActivity : AppCompatActivity() {
     }
 
     private fun loginUser() {
-        val loadingFragment = LoadingFragment()
-        loadingFragment.show(supportFragmentManager,"ForgotPassword")
 
 
         firebaseAuth.signInWithEmailAndPassword(email, password)
             .addOnSuccessListener {
+                val loadingFragment = LoadingFragment()
+                loadingFragment.show(supportFragmentManager,"ForgotPassword")
                 checkUser()
 
             }

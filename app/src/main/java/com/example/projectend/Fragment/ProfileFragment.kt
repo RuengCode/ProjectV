@@ -14,7 +14,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.projectend.R
 import com.example.projectend.activity.ProfileEditActivity
+import com.example.projectend.activity.SplashActivity
 import com.example.projectend.adapter.MySliderImageAdapter
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -61,6 +63,23 @@ class ProfileFragment : Fragment() {
         editProfile.setOnClickListener {
             startActivity(Intent(context, ProfileEditActivity::class.java))
         }
+
+        val btnLogout: Button = view.findViewById(R.id.btnLogout)
+        btnLogout.setOnClickListener {
+            context?.let { it1 ->
+                MaterialAlertDialogBuilder(it1)
+                    .setMessage("you want logout or exit ?")
+                    .setPositiveButton("Logout") { dialog, which ->
+
+                        firebaseAuth.signOut()
+                        checkUser()
+                    }
+                    .setNegativeButton("Cancel") { dialog, which ->
+
+                    }
+                    .show()
+            }
+        }
 //        val user:FirebaseUser? = firebaseAuth.currentUser
 
 //        if (user != null){
@@ -77,6 +96,17 @@ class ProfileFragment : Fragment() {
 
 
         return view
+    }
+
+    private fun checkUser() {
+        val firebaseUser = firebaseAuth.currentUser
+        if (firebaseUser == null) {
+            val intent = Intent(context, SplashActivity::class.java)
+            startActivity(intent)
+
+        } else {
+
+        }
     }
 
     private fun loadUserInfo() {

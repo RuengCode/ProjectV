@@ -27,11 +27,12 @@
         android:layout_height="529dp"
         android:layout_below="@id/text001"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="108dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -46,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+
                 android:fontFamily="@font/itim"
                 android:text="ศูนย์อำนวยกาต้านโรคติดต่อเชื้อไวรัสโคโรนา 2019"
                 android:textAlignment="center"
@@ -293,6 +295,63 @@
                 android:textSize="16dp"
                 android:textStyle="bold" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll006"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ll004"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_login"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/itim"
+                android:text="โรงพยาบาลสมเด็จพระยุพราชกุฉินารายณ์"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_baseline_local_hospital_24"
+                android:fontFamily="@font/itim"
+                android:text="088-557-4408"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/itim"
+                android:text="สำนักงานสาธารณสุขอำเภอกุฉินารายณ์"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_baseline_local_hospital_24"
+                android:fontFamily="@font/itim"
+                android:text="043-851-277"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
 
     </LinearLayout>
 

@@ -55,7 +55,7 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/zombie" />
+                        android:background="@drawable/organ" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/z_heal" />
+                        android:background="@drawable/patient" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/z_1" />
+                        android:background="@drawable/examination" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -133,7 +133,7 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/z_dead" />
+                        android:background="@drawable/funeral" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -167,7 +167,7 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/z_revice" />
+                        android:background="@drawable/isolation" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -193,7 +193,7 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/syringe" />
+                        android:background="@drawable/vaccine" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -219,7 +219,7 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/update" />
+                        android:background="@drawable/health" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -245,7 +245,7 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/healing" />
+                        android:background="@drawable/consultation" />
 
                     <TextView
                         android:layout_width="wrap_content"

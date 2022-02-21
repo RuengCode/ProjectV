@@ -9,12 +9,12 @@
         android:id="@+id/page_2"
         android:enabled="true"
         android:icon="@drawable/m_2"
-        android:title="จุดเสี่ยง"/>
+        android:title="แผนที่"/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"
         android:icon="@drawable/m_3"
-        android:title="homeisolat"/>
+        android:title="Homeisolat"/>
     <item
         android:id="@+id/page_4"
         android:enabled="true"
@@ -24,5 +24,5 @@
         android:id="@+id/page_5"
         android:enabled="true"
         android:icon="@drawable/m_5"
-        android:title="ติดต่อ"/>
+        android:title="การตั้งค่า"/>
 </menu>

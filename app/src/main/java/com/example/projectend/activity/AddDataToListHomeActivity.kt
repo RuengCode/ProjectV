@@ -83,13 +83,13 @@ class AddDataToListHomeActivity : AppCompatActivity(), DatePickerDialog.OnDateSe
         hasMap["tempSpO2"] = tempSpO2
         hasMap["tempPR"] = tempPR
 
-        val ref = FirebaseDatabase.getInstance().getReference("Users")
+        val ref = FirebaseDatabase.getInstance().getReference("Test")
         ref.child(name)
             .setValue(hasMap)
             .addOnSuccessListener {
 
 
-                startActivity(Intent(this, FirebaseLoginActivity::class.java))
+                startActivity(Intent(this, ListHomeActivity::class.java))
             }
             .addOnFailureListener { e ->
 

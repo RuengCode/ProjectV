@@ -58,9 +58,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="-67dp"
-            android:layout_marginEnd="28dp"
+            android:layout_marginEnd="25dp"
             android:layout_marginBottom="17dp"
             android:background="@drawable/bg_linear"
             android:orientation="vertical">
@@ -135,15 +135,26 @@
 
             <Button
                 android:id="@+id/btnEditProfile"
-                android:layout_width="320dp"
+                android:layout_width="250dp"
                 android:layout_height="55dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/bg_btn_login1"
                 android:fontFamily="@font/itim"
-                android:text="EditProfile"
+                android:text="แก้ไขโปรไฟล์"
                 android:textSize="18dp" />
 
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_btn_logout"
+                android:fontFamily="@font/itim"
+                android:text="ออกจากระบบ"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
         </LinearLayout>
 
     </RelativeLayout>

@@ -18,7 +18,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.ProjectEnd">
+
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -30,7 +32,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyBNZIHoOK8AeWfiSbkkRMBb9BYFhwgumCk" />
 
 
         <activity
@@ -44,7 +46,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MapCovidActivity"
+            android:name=".activity.MainActivity"
             android:exported="false" />
         <activity
             android:name=".activity.AddDataToListHomeActivity"
@@ -77,7 +79,7 @@
             android:name=".TestActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.MapCovidActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ContactActivity"

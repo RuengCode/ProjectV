@@ -63,33 +63,30 @@ class MainFragment : Fragment() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         menu1.setOnClickListener {
-            val intent = Intent(context, FirebaseRegisterActivity::class.java)
-            startActivity(intent)
-        }
-        menu2.setOnClickListener {
-            val intent = Intent(context, FirebaseLoginActivity::class.java)
-            startActivity(intent)
-        }
-        menu3.setOnClickListener {
-            firebaseAuth.signOut()
-            checkUser()
-        }
-        menu4.setOnClickListener {
             val intent = Intent(context, ListHomeActivity::class.java)
             startActivity(intent)
         }
-        menu8.setOnClickListener {
+        menu2.setOnClickListener {
             val intent = Intent(context, MapCovidActivity::class.java)
             startActivity(intent)
+        }
+        menu3.setOnClickListener {
+        }
+        menu4.setOnClickListener {
+
+        }
+        menu8.setOnClickListener {
+
         }
         getData(view)
 
         val imageList: ArrayList<String> = ArrayList()
-        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
-        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
-        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
-        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
-        imageList.add("https://ch9airport.com/wp-content/uploads/2020/04/6304-covid19-ar1-1.png")
+        imageList.add("https://sv1.picz.in.th/images/2022/01/30/npE5Tf.png")
+        imageList.add("https://sv1.picz.in.th/images/2022/01/30/npEEja.png")
+        imageList.add("https://sv1.picz.in.th/images/2022/01/30/npEOvq.png")
+        imageList.add("https://sv1.picz.in.th/images/2022/01/30/npEjBz.png")
+        imageList.add("https://sv1.picz.in.th/images/2022/01/30/npElU8.png")
+        imageList.add("https://sv1.picz.in.th/images/2022/01/30/npEo8R.png")
         setImageInSlider(imageList, imageSlider)
 
         return view

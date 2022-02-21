@@ -12,4 +12,17 @@
     <style name="btnColor">
         <item name="android:background">@drawable/bg_btn_login1</item>
     </style>
+    <style name="mytoast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#000</item>
+        <item name="stFont">@font/itim</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#fff</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">1.6dp</item>
+        <item name="stStrokeColor">#FF0000</item>
+        <item name="stIconStart">@drawable/zombie</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stRadius">25dp</item>
+    </style>
 </resources>

@@ -28,6 +28,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
+import io.github.muddz.styleabletoast.StyleableToast
 import retrofit2.http.Url
 import java.lang.Exception
 
@@ -131,7 +132,7 @@ class ProfileEditActivity : AppCompatActivity() {
             .addOnSuccessListener {
                 progressDialog.dismiss()
 
-                Toast.makeText(this, "Update Success", Toast.LENGTH_SHORT).show()
+                StyleableToast.makeText(this,"ไม่สำเร็จ",R.style.mytoast).show()
 
             }
             .addOnFailureListener {
@@ -233,7 +234,7 @@ class ProfileEditActivity : AppCompatActivity() {
 
                 edImageProfile.setImageURI(imageUri)
             } else {
-                Toast.makeText(this, "ไม่ๆๆๆๆๆๆ", Toast.LENGTH_SHORT).show()
+                StyleableToast.makeText(this,"ไม่สำเร็จ",R.style.mytoast)
             }
         }
     )

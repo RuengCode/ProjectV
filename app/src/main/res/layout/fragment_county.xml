@@ -17,7 +17,7 @@
             android:fontFamily="@font/itim"
             android:text="สถานการณ์โควิดทุกจังหวัด"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="23dp" />
 
         <androidx.recyclerview.widget.RecyclerView

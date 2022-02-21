@@ -39,7 +39,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:src="@drawable/zombie"
+                        android:src="@drawable/software"
                         android:textAlignment="center"
                         app:civ_border_color="#2196F3"
                         app:civ_border_width="2dp" />
